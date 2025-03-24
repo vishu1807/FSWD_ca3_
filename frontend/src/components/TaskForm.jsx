@@ -6,7 +6,7 @@ const TaskForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/tasks", { task });
+    await axios.post("http://localhost:6000/tasks", { task });
     setTask("");
   };
 
@@ -25,5 +25,3 @@ const TaskForm = () => {
 };
 
 export default TaskForm;
-
-working
